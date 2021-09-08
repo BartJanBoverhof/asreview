@@ -55,6 +55,13 @@ The following extensions are developed and maintained by the ASReview community:
       require different models.
     - `Github <https://github.com/JTeijema/asreview-plugin-model-switcher>`__
 
+* ASReview NB + CNN classifier with HPO
+    - This extension adds a model consiting of two seperate models for use during simulation mode. The first *X* amount of iterations (default = 500) are run 
+      with a NB model. After the switchpoint of 500 iterations, a switch to a CNN is made. Immediately at this switching point, and subsequently after each 150 
+      iterations, hyperparamater optimisation is conducted in order to find the most suitable CNN architecture for the specific amount of data that is being 
+      utilised at that moment.  
+    - `Github <https://github.com/BartJanBoverhof/asreview-cnn-hpo>`
+
 
 If an extension is not on this list, or you made one and you would like it to 
 be added to this list, please initiate an issue on `Github
